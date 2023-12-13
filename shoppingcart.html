@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>k-asia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: right;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .logo {
+            max-width: 100px;
+            height: auto;
+            margin: 15px !important;
+        }
+
+        .navbar a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .Cart-Container {
+            width: 90%;
+            height: 90%;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0px 25px 40px #1687d933;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .Header {
+            margin-bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Header-text {
+            margin-bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        .Heading {
+            font-size: 36px;
+            font-family: sans-serif;
+            font-weight: 1000;
+            color: #2F3841;
+            margin-bottom: 0;
+        }
+
+        .Cart-Items {
+            margin: 20px auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .image-box {
+            width: 15%;
+            text-align: center;
+        }
+
+        .about {
+            width: 40%;
+            padding: 0 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: #202020;
+        }
+
+        .counter {
+            width: 15%;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .counter h5 {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .counter input {
+            width: 100px;
+
+        }
+
+        .prices {
+            width: 20%;
+            text-align: right;
+        }
+
+        .amount {
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 800;
+            color: #202020;
+            margin-top: 20px;
+        }
+
+        .remove {
+            margin-top: 20px;
+            /* Increase top margin */
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: #E44C4C;
+            cursor: pointer;
+        }
+
+        hr {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .결제 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .total {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-top: 20px;
+        }
+
+        .Subtotal,
+        .items,
+        .total-amount {
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 500;
+            color: #000000;
+        }
+
+        .buttonss {
+            width: 100%;
+            font-size: large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-right: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-back {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+
+        .btn-checkout {
+            margin-left: 60px;
+            background-color: #1687d9;
+            color: #fff;
+        }
+
+        .footer {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="logo.jpg" alt="Company Logo">
+        <a class="Header-text" href="K-Asia Beauty.html">K-asia Beauty </a>
+        <a class="Header-text" href="contact.html">Contact Us</a>
+        <a>
+            <div class="buttonss">
+                <buttonss type="button" onclick="alert('로그아웃을 하였습니다!')">Logout</button>
+            </div>
+        </a>
+    </header>
+
+    <div class="Cart-Container">
+        <div class="Header">
+            <h1 class="Heading">Shopping Cart </h1>
+        </div>
+        <div class="Cart-Items">
+            <td>
+                <input type="checkbox" name="check" class="ck">
+            </td>
+            <div class="image-box">
+                <img src="777.jpg" height="240px">
+            </div>
+            <div class="about"><br> <br> <br>
+                <h2 class="title">Dr.G / Green mild up / 50ml </h2>
+                <h3 class="subtitle">skin-care</h3>
+            </div>
+            <div class="counter">
+                <h5>수량:</h5>
+                <input name="order" type="number" min="1" step="1" value="1" />
+            </div>
+            <div class="prices"><br><br>
+                <div class="amount">금액: ₩20,000</div>
+                <div class="remove"><u>Delete</u></div>
+            </div>
+        </div>
+        <div class="Cart-Items">
+            <td>
+                <input type="checkbox" name="check" class="ck">
+            </td>
+            <div class="image-box">
+                <img src="99.jpg" height="240px">
+            </div>
+            <div class="about"> <br> <br> <br>
+                <h2 class="title">AQUA 365 UV SUN 선크림 50ml</h2>
+                <h3 class="subtitle">skin-care</h3>
+            </div>
+            <div class="counter">
+                <h5>수량:</h5>
+                <input name="order" type="number" min="1" step="1" value="1" />
+            </div>
+            <div class="prices"> <br><br>
+                <div class="amount">금액: ₩10,000</div>
+                <div class="remove"><u>Delete</u></div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="결제">
+            <form action="paymentsection.html" method="post">
+                <div class="total">
+                    <div class="Subtotal">Sub-Total</div>
+                    <div id="items" class="items">2 items</div>
+                    <div class="total-amount">총금액: ₩30,000</div>
+                </div>
+                <div class="buttons">
+                    <a href="product details page 2.html" class="btn btn-back">이전</a>
+                    <a href="paymentsection.html" class="btn btn-checkout">결제</a>
+                </div>
+            </form>
+        </div>
+    </div><br><br><br><br><br><br><br><br><br><br>
+    <div class="footer">
+        <p>© 2023 K-Asia Beauty. All rights reserved.</p>
+        <p>
+            대표자: 조준휘 | 사업자등록번호: 220-204-0507323 | email: kasiabeauty@kr.co | Phone: 02-970-9385 | Address: 서울특별시 노원구
+            공릉로 232, 무궁관 508호
+
+        </p>
+    </div>
+</body>
+
+</html>

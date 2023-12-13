@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>주문, 결제,</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4efef;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    button {
+      padding: 10px;
+      background-color: rgb(76, 175, 172);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    input {
+      padding: 8px;
+    }
+
+    .total_price {
+      text-align: right;
+    }
+
+    .logo_content {
+      display: flex;
+      width: 100%;
+      gap: 20px;
+      justify-content: space-between;
+      padding-bottom: 20px;
+    }
+
+    .logo {
+      display: block;
+      width: 140px;
+      height: 140px;
+    }
+
+    .logo_text {
+      justify-content: space-between;
+      padding-bottom: 20px;
+      margin: 40px;
+    }
+
+    .total_price_content {
+      display: flex;
+      width: 50%;
+      justify-content: space-between;
+    }
+
+    .total_price_content>h3 {
+      margin: 0;
+    }
+
+    #paymentMethod {
+      height: 35px;
+    }
+
+    header {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: rgb(233, 186, 186);
+      width: 100%;
+      background-color: #ffffff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: right;
+    }
+
+    .Header {
+      margin-bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Header-text {
+      margin-bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+
+    .Heading {
+      font-size: 36px;
+      font-family: sans-serif;
+      font-weight: 1000;
+      color: rgb(213, 118, 81);
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo_content">
+      <header>
+        <img class="logo" src="logo.jpg" alt="Company Logo">
+        <a class="Header-text" href="K-Asia Beauty.html">K-asia Beauty </a>
+        <a class="Header-text" href="contact.html">Contact Us</a>
+
+      </header>
+    </div>
+    <h2>주문/결제</h2>
+    <form id="infoForm">
+      <!-- 주문 -->
+      <label for="fullName">받는 사람:</label>
+      <input type="text" id="fullName" name="fullName" required />
+      <label for="phoneNumber">휴대전화 :</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="123-4560-7890" required />
+      <h3>배송지</h3>
+      <label for="deliveryAddress">주소:</label>
+      <input type="text" id="deliveryAddress" name="deliveryAddress" required />
+
+      <label for="deliveryZipCode">우편번호:</label>
+      <input type="text" id="deliveryZipCode" name="deliveryZipCode" required />
+      <div class="total_price_content">
+        <label for="total price">결제금액:</label>
+        <h3 class="total_price">₩ 30,000</h3>
+      </div>
+      <!-- <input type="text" id="total price" name="total price" required> -->
+      <!-- 결제 -->
+
+      <body>
+        <div class="container">
+          <h2>결제수단</h2>
+          <form id="paymentMethodForm">
+            <label for="paymentMethod">결제수단 선택:</label>
+            <select id="paymentMethod" name="결제수단 선택" required>
+              <option value="creditCard">신용카드</option>
+              <option value="Bank Transfer">계좌이체</option>
+              <option value="Kakao Pay">Kakao Pay</option>
+              <option value="KB Pay">KB Pay</option>
+              <option value="Hana 1Q Pay">Hana 1Q Pay</option>
+              <option value="Toss">Toss</option>
+            </select>
+            <button type="button" onclick="alert('결제가 완료됬습니다!!!')">Continue</button>
+            </button>
+        </div>
+    </form>
+</body>
+
+</html>

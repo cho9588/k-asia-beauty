@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HOT DEAL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="k-asia beauty style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        let likeCount1 = 0;
+        let likeCount2 = 0;
+        let likeCount3 = 0;
+        let likeCount4 = 0;
+
+        function likeProduct(productId) {
+            if (productId === 1) {
+                likeCount1++;
+                document.getElementById('likeCount1').innerHTML = likeCount1;
+            } else if (productId === 2) {
+                likeCount2++;
+                document.getElementById('likeCount2').innerHTML = likeCount2;
+            } else if (productId === 3) {
+                likeCount3++;
+                document.getElementById('likeCount3').innerHTML = likeCount3;
+            } else if (productId === 4) {
+                likeCount4++;
+                document.getElementById('likeCount4').innerHTML = likeCount4;
+            }
+        }
+        $(document).ready(function() {
+        $('.like-icon').hover(
+            function() {
+                $(this).find('.heart-icon').addClass('hover');
+            },
+            function() {
+                $(this).find('.heart-icon').removeClass('hover');
+            }
+        );
+    });
+    </script>
+   
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default" style="border: none;">
+      <script src="timer.js"></script>
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="K-Asia Beauty.html"><img src="logo.jpg" class="img-circle" alt="Logo"
+                        width="100" height="100"> </a>
+                <a class="navbar-brand">
+                    <h1>HOT DEAL</h1>
+                </a>
+            </div><br>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html"> Login</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Language <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">KR </a></li>
+                            <li><a href="#">EN </a></li>
+                            <li><a href="#">CN </a></li>
+                            <li><a href="#">UZ </a></li>
+                            <li><a href="#">MN </a></li>
+                            <li><a href="#">IR </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+    </nav>
+    <nav class="navbar navbar-inverse" style="background-color: white; border-color: white;">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="skin-care.html">skin-care </a></li>
+                        <li><a href="make-up.html">make-up </a></li>
+                        <li><a href="#">body-care </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="companyintroduction.html">Company Profile </a></li>
+                        <li><a href="contact.html">Contact us </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Notice<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">General Notice </a></li>
+                        <li><a href="#">Event Notice </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ESG Management<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ESG.html">K-Asia Beauty ESG </a></li>
+                        <li><a href="#">ESG Management Report </a></li>
+                    </ul>
+                </li>
+                <li><a href="offer.html" style="color: red; text-shadow: 1px 1px 2px black;">HOT DEAL</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a
+                        href="https://www.google.com/maps/place/Mugung+Hall/data=!3m1!4b1!4m6!3m5!1s0x357cb9b25df72d8d:0x721c1ed1e03a10e9!8m2!3d37.6307621!4d127.0809302!16s%2Fg%2F11kv7s7njw?entry=ttu"><span
+                            class="glyphicon glyphicon-map-marker"></span> Map</a></li>
+                <li><a href="shoppingcart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Shopping
+                        Cart</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Phone</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Mail</a></li>
+                <li><a href="https://www.aichatting.net/kr/">
+                        <i id="ai-icon"></i> AI A/S </a>
+                    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+                        integrity="sha384-lvfpg5RFYP2V42ze6PLa3UdOKbcplp+9SOv1F8k1Z5z2P45LObUiT5PyVd+Yz5zT"
+                        crossorigin="anonymous"></script>
+                    <script type="defer" src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+                    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+                    <script> document.addEventListener('DOMContentLoaded', function () {
+                            var aiIcon = document.getElementById('ai-icon');
+                            aiIcon.className = 'fas fa-robot';
+                        });
+                    </script>
+                </li>
+                <li><a href="https://www.facebook.com/">
+                        <ion-icon name="logo-facebook"></ion-icon> Facebook
+                    </a>
+                    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            
+
+            <div class="carousel-inner">
+
+                
+                <img src="2023_Christmas_main.jpg" alt="show5" style="width:100%;">
+                
+
+
+            </div>
+
+            
+        </div>
+    </div>
+
+
+    <div class="container-fluid  bg-2 text-center">
+        <h2>#time DEAL</h2>
+        <br>
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="777.jpg" class="img-responsive" style="width:100% " alt="Image">
+                <li>
+                    <img class="sticker" src="heart.webp" alt="Sticker" onclick="likeProduct(1)">
+                    <span id="likeCount1">0</span>
+                    <a href="product details page 2.html">
+                        <h4>Dr.G / Green mild up / 50ml</h4>
+                        <h5><del>25,000원</del>--> 20,000원</h5>
+                    </a>
+                    <div id="timer1" class="highlight"></div>
+
+                </li>
+            </div>
+
+            <div class="col-sm-3">
+                <img src="skin-care-6.jpg" class="img-responsive" style="width:100% " alt="Image">
+                <li>
+                    <img class="sticker" src="heart.webp" alt="Sticker" onclick="likeProduct(2)">
+                    <span id="likeCount2">0</span>
+                    <a href="product details page 3.html">
+                    <h4>바비브라운 인텐시브 세럼 파운데이션 SPF40 PA++++</h4>
+                    <h5><del>102,000원</del>--> 89,900원</h5>
+                    </a>
+                    <div id="timer2" class="highlight"></div>
+                </li>
+               
+                
+                
+            </div>
+            <div class="col-sm-3">
+                <img src="1112.jpg" class="img-responsive" style="width: 100%;" alt="Image"><br>
+                    <li>
+                        <img class="sticker" src="heart.webp" alt="Sticker" onclick="likeProduct(3)">
+                    <span id="likeCount3">0</span>
+                        <a href="product details page 5.html">
+                        
+                            <h4>Dr.G / 클리어 수딩 크림 / 50ml</h4>
+                            <h5><del>25,000원</del>--> 23,000원</h5>
+                            <h3></h3>
+                   
+                  </a>
+                  <div id="timer3" class="highlight"></div>
+
+                </li>
+            </div>
+            <div class="col-sm-3">
+                <img src="skin-care-5.jpg" class="img-responsive" style="width:100% " alt="Image">
+                <li>
+                    <img class="sticker" src="heart.webp" alt="Sticker" onclick="likeProduct(4)">
+              <span id="likeCount4">0</span>
+                    <a href="product details page 6.html">
+                        <h4>Dior / 디올 포에버 쿠션 믹스 & 매치</h4>
+                        <h5><del>120,000원</del>--> 99,000원</h5>
+                    </a>
+                  <div id="timer4" class="highlight"></div>
+
+                </li>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container-fluid bg-4 text-center">
+        <h2 class="margin">Cosmetic Knowledge Zone</h2><br>
+        <div class="row">
+            <div class="col-lg-12">
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/pgxajIDpDLg?si=IoT4XDDPZEufWHwQ&amp;start=8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <br>
+        <p>© 2023 K-Asia Beauty. All rights reserved.</p>
+        <p>대표자: 조준휘 | 사업자등록번호: 220-204-0507323 | email: kasiabeauty@kr.co |
+            Phone:02-970-9385 | Address:서울특별시 노원구 공릉로 232, 무궁관 508호</p>
+    </div>
+    
+</body>
+
+</html>

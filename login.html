@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>K-Asia Beauty</title>
+    <style>
+        .login-container1 {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 300px;
+            text-align: center;
+
+        }
+
+        .login-container h2 {
+            color: #333333;
+        }
+
+        .login-form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4285f4;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .form-group button:hover {
+            background-color: #357ae8;
+        }
+
+        .form-group .home-page-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #34a853;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .form-group .home-page-button:hover {
+            background-color: #2d8a7e;
+        }
+
+        .social-login {
+            margin-top: 20px;
+        }
+
+        .social-login a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-login img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-login img:hover {
+            transform: scale(1.2);
+        }
+
+        .form-group .forgot-links {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .form-group .forgot-links a {
+            color: #4285f4;
+            text-decoration: none;
+        }
+
+        .form-group .forgot-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="k-asia beauty style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body style="position: relative;">
+    <nav class="navbar navbar-default" style="border: none;">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="K-Asia Beauty.html"><img src="logo.jpg" class="img-circle" alt="Logo"
+                        width="100" height="100"></a><br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </div><br>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html"> Login</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Language <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">KR </a></li>
+                            <li><a href="#">EN </a></li>
+                            <li><a href="#">CN </a></li>
+                            <li><a href="#">UZ </a></li>
+                            <li><a href="#">MN </a></li>
+                            <li><a href="#">IR </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+    </nav>
+    <nav class="navbar navbar-inverse" style="background-color: white; border-color: white;">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="skin-care.html">skin-care </a></li>
+                        <li><a href="make-up.html">make-up </a></li>
+                        <li><a href="#">body-care </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="companyintroduction.html">Company Profile </a></li>
+                        <li><a href="contact.html">Contact us </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Notice<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">General Notice </a></li>
+                        <li><a href="#">Event Notice </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ESG Management<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ESG.html">K-Asia Beauty ESG </a></li>
+                        <li><a href="#">ESG Management Report </a></li>
+                    </ul>
+                </li>
+                <li><a href="offer.html" style="color: red; text-shadow: 1px 1px 2px black;">HOT DEAL</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a
+                        href="https://www.google.com/maps/place/Mugung+Hall/data=!3m1!4b1!4m6!3m5!1s0x357cb9b25df72d8d:0x721c1ed1e03a10e9!8m2!3d37.6307621!4d127.0809302!16s%2Fg%2F11kv7s7njw?entry=ttu"><span
+                            class="glyphicon glyphicon-map-marker"></span> Map</a></li>
+                <li><a href="shoppingcart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Shopping
+                        Cart</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Phone</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Mail</a></li>
+                <li><a href="https://www.aichatting.net/kr/">
+                        <i id="ai-icon"></i> AI A/S </a>
+                    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+                        integrity="sha384-lvfpg5RFYP2V42ze6PLa3UdOKbcplp+9SOv1F8k1Z5z2P45LObUiT5PyVd+Yz5zT"
+                        crossorigin="anonymous"></script>
+                    <script type="defer" src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+                    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+                    <script> document.addEventListener('DOMContentLoaded', function () {
+                            var aiIcon = document.getElementById('ai-icon');
+                            aiIcon.className = 'fas fa-robot';
+                        });
+                    </script>
+                </li>
+                <li><a href="https://www.facebook.com/">
+                        <ion-icon name="logo-facebook"></ion-icon> Facebook
+                    </a>
+                    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    </div>
+    </div>
+    </nav>
+
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+                <li data-target="#myCarousel" data-slide-to="7"></li>
+            </ol>
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="login-container1">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required="">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required="">
+                    <div class="forgot-links">
+                        <a href="forgot.id.html">Forgot ID?</a> | <a href="forgot.password.html">Forgot Password?</a>
+                    </div>
+                </div>
+                <label for="rememberMe">Remember Me</label>
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <div class="form-group">
+                    <button class="login-button" onclick="window.location.href=&#39;K-Asia Beauty.html&#39;">Login</button>
+                </div>
+      
+
+            </form>
+            <div class="form-group">
+                <p>Don't have an account? <a
+                        href="register.html">Register
+                        here</a>.</p>
+            </div>
+            <div class="social-login">
+
+                <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=1546722939049402&kid_directed_site=0&app_id=1546722939049402&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fresponse_type%3Dcode%26client_id%3D1546722939049402%26scope%3Dpublic_profile%252C%2Bemail%26state%3D67ff2e49482c1c6dee6be891c7cd48d91fcf598cfc9a8468dab663d20fb900edf866bcdcef852d475f890ccc3920024fdc0d5fee2898cd6693a75ba099ec4a6783bf91dc96a0aa13025e71ee590c564a9365bb5b50b0385d92231034056e041e22ce935d683ba57fa342c91274b78e2f32a356b3b9f66e2cb1154c2babe44a3c%26redirect_uri%3Dhttps%253A%252F%252Fbeautynetkorea.com%252FApi%252FMember%252FOauth2ClientCallback%252Ffacebook%252F%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Da47b4ed5-f096-46d2-9df3-58242e27c3e2%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fbeautynetkorea.com%2FApi%2FMember%2FOauth2ClientCallback%2Ffacebook%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D67ff2e49482c1c6dee6be891c7cd48d91fcf598cfc9a8468dab663d20fb900edf866bcdcef852d475f890ccc3920024fdc0d5fee2898cd6693a75ba099ec4a6783bf91dc96a0aa13025e71ee590c564a9365bb5b50b0385d92231034056e041e22ce935d683ba57fa342c91274b78e2f32a356b3b9f66e2cb1154c2babe44a3c%23_%3D_&display=page&locale=ko_KR&pl_dbl=0"
+                    target="_blank">
+                    <img src="facebook-login-button.png" style="width: 150px;">
+                </a>
+                <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=code&client_id=116001393822-mo7859d6kd3pa53bhr82ult21d0cvh5u.apps.googleusercontent.com&scope=profile%20email&state=af6d34bc6c66744159539492b3c9bcef551cf0cf175e223794cd2e645614b26a263c2fb636a7b3116bec2bcc08571dfad5ac03dcb0352c83bbe15543238a96ed8355300a7b3b864ce8b4643e113d8eaa87b3534350ef28962acd551ea3160f0651a62c5aa308e67d0bbbbdc31cc0250b3837956805c367c794164b84552d0f70&redirect_uri=https%3A%2F%2Fbeautynetkorea.com%2FApi%2FMember%2FOauth2ClientCallback%2Fgoogleplus%2F&service=lso&o2v=1&theme=glif&flowName=GeneralOAuthFlow"
+                    target="_blank">
+                    <img src="GoogleSign.png" style="width: 150px;">
+                </a>
+                <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fbeautynetkorea.com%252FApi%252FMember%252FOauth2ClientCallback%252Fkakao%252F%26through_account%3Dtrue%26client_id%3D9ae1942682ad566ecf785f4cac548432#login"
+                    target="_blank">
+                    <img src="login-button.png" style="width: 150px;">
+                </a>
+            </div>
+
+
+        </div>
+
+
+    </div>>
+
+</body>
+
+</html>

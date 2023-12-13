@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.container-fluid {
+    width: 100%;
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.input-group {
+    width: 80%;
+    padding-top: 10px;
+    max-width: 700px;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.highlight {
+    background-color: yellow;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    margin-bottom: 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+
+.navbar-nav li a:hover {
+    color: rgb(47, 0, 255) !important;
+}
+
+.navbar-brand {
+    padding-top: 0px !important;
+    padding-bottom: 20px;
+}
+
+body {
+    font: 18px "Montserrat", sans-serif;
+    line-height: 1.8;
+    background-color: #FDFDFD;
+}
+
+.bg-1 {
+    color: rgb(128, 18, 18);
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.bg-2 {
+    color: rgb(80, 13, 13);
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    list-style: none;
+}
+
+
+.bg-4 {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+h4 {
+    padding-top: 8px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+h5 {
+    color: rgb(82, 147, 245);
+    font-size: 16px;
+   
+}
+
+.main {
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: blue;
+}
+
+.ESG-text {
+    border-bottom: 2px solid black;
+}
+
+.main-p {
+    line-height: 2;
+}
+
+.footer {
+    margin-top: 20px;
+    border-top: 1px solid #f9abab;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #100e0e;
+}
+
+.sticker {
+    width: 20px; 
+    height: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; 
+    
+}
+
+.sticker img {
+    width: 50%; 
+}
+
+.sticker:hover {
+    transform: scale(1.2); 
+}
+.product-item {
+    display: flex;
+    align-items: center;
+}

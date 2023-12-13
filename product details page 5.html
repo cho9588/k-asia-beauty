@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 상품 이름 -->
+    <title>Dr.G</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-size: 16px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .logo_content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+        }
+
+        .logo_text {
+            margin: 0;
+            font-size: 40px;
+            color: #d5a4d1;
+        }
+
+        .container-fluid.bg-1 {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .product-image {
+            width: 100%;
+        }
+
+        .product-details {
+            margin-top: 20px;
+        }
+
+        .product-details h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-details h3,
+        .product-details h4 {
+            margin: 10px 0;
+        }
+
+        .product-details select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .product-details input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .product-details .btn-lg {
+            margin-top: 10px;
+        }
+
+        .product-details #infoForm {
+            margin-top: 20px;
+        }
+        header {
+            width: 100%;
+            background-color: #ffffff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: right;
+        }
+        .Header {
+            margin-bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Header-text {
+            margin-bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        .Heading {
+            font-size: 36px;
+            font-family: sans-serif;
+            font-weight: 1000;
+            color: rgb(213, 118, 81);
+            margin-bottom: 0;
+        }
+        .footer {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 상품 logo -->
+        <div class="logo_content">
+            <header>
+                <img class="logo" src="logo.jpg" alt="Company Logo">
+                <a class="Header-text"href="K-Asia Beauty.html">K-asia Beauty </a>
+                <a class="Header-text" href="contact.html
+                ">Contact Us</a>
+            </header>
+        </div>
+
+        <div class="container-fluid bg-1">
+            <div class="row">
+                <!-- 상품 사진 -->
+                <div class="col-sm-6">
+                    <img src="1112.jpg" class="img-responsive product-image" alt="Product Image">
+                </div>
+                <div class="col-sm-6 product-details">
+                    <h1>Dr.G</h1>
+                    <form>
+                        <h3>클리어 수딩 크림 50ml</h3>
+                        <h4>23,000원</h4>
+                        <!-- 상품 용량 선택 -->
+                        <p>용량 선택</p>
+                        <select name="volume">
+                            <option value="50ml">50ml</option>
+                            <option value="100ml">100ml</option>
+                        </select>
+                        <!-- 구매 갯수 수량 -->
+                        <p>구매 수량</p>
+                        <div class="container-fluid">
+                            <input name="order" type="number" min="1" step="1" value="1" />
+                        </div>
+                        <!-- 장바구니 연결 -->
+                        <a href="shoppingcart.html" class="btn btn-default btn-lg">장바구니</a>
+                        <!-- 결제 연결 -->
+                        <a href="paymentsection.html" class="btn btn-default btn-lg">결제</a>
+
+                        <!-- 상품 설명서 -->
+                        <h5>시그니처 앵콜 특가 레드 블레미쉬 클리어 수딩 크림 50ml 듀오 선물하기 세트</h5>
+                        <h5>민감성 피부는 물론 여드름성 피부도 가볍지만 오래도록 수분 충전이 가능해요</h5>
+                        <h5>부드러운 발림성의 촉촉한 젤 제형이 끈적임 없이 산뜻하게 부족한 수분만 꽉 채워줘요</h5>
+                        <h5>좋은 성분으로 더 좋은 제품을 지금 바로 K-Asia Beauty에서 구매하세요!</h5>
+                    </form>
+
+                    <!-- 상품 리뷰 -->
+                    <form id="infoForm">
+                        <label for="리뷰">리뷰</label><br>
+                        <input type="text" id="리뷰" name="리뷰"/>
+                        <button type="button" onclick="alert('귀하의 소중한 의견을 제출했습니다! 감사합니다!!!')">제출</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2023 K-Asia Beauty. All rights reserved.</p>
+        <p>
+            대표자: 조준휘 | 사업자등록번호: 220-204-0507323 | email: kasiabeauty@kr.co | Phone: 02-970-9385 | Address: 서울특별시 노원구
+            공릉로 232, 무궁관 508호
+
+        </p>
+    </div>
+</body>
+
+</html>
